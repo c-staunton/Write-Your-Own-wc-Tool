@@ -22,7 +22,7 @@ def number_of_characters():
     return (sum(len(i) for i in lines))
 
 def number_of_bytes():
-    return (f'File Size in Bytes is {file_stats.st_size}')
+    return (file_stats.st_size)
 
 if sys.argv[1] == "-l":
     print(str(number_of_lines()))
